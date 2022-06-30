@@ -1,15 +1,154 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Helvetica", sans-serif;
+}
+
 .imagecontainer {
-    width: 100px;
+    background-color: white;
+    width: 30%;
+    height: 600px;
     margin: auto;
     display: block;
     justify-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 6px 6px 10px lightgray;
+    position: relative;
+    top: 60px;
+    
 }
 
 .image {
     margin: auto;
-    display: block;
+    display: absolute;
     justify-items: center;
-    width: 50%;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.imagecontainer:hover .image {
+    opacity: 0.5;
+}
+
+.imagecontainer:hover {
+    background-color: black;
+}
+
+.imagecontainer:hover .link {
+    top: 500px;
+}
+
+.imagecontainer:hover .upload {
+    top: 500px;
+}
+
+.imagecontainer:hover .settings {
+    top: 500px;
+}
+
+.imagecontainer:hover .save {
+    left: 280px;
+}
+
+.link {
+    position: absolute;
+    z-index: 999;
+    left: 10px;
+    top: 600px;
+    right: 0px;
+    bottom: 0px;
+    background-color: white;
+    width: 220px;
+    height: 70px;
+    border-radius: 40px;
+    opacity: 0.8;
+    transition: top 0.8s;
+}
+
+.linktext {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.smallerbuttons {
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+.upload {
+    position: absolute;
+    z-index: 999;
+    left: 250px;
+    top: 600px;
+    right: 100px;
+    bottom: 0px;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: top 0.8s;
+}
+
+.settings {
+    position: absolute;
+    z-index: 999;
+    left: 340px;
+    top: 600px;
+    right: 100px;
+    bottom: 0px;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: top 0.8s;
+}
+
+.save {
+    position: absolute;
+    display: inline-block;
+    z-index: 999;
+    left: 600px;
+    top: 23px;
+    right: 0px;
+    bottom: 0px;
+    background-color: red;
+    width: 120px;
+    height: 70px;
+    border-radius: 40px;
+    transition: left 0.8s;
     
-    
+}
+
+.savetext {
+    color: white;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 30px;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.finger:hover {
+    cursor: pointer;
 }
