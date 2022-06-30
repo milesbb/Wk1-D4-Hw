@@ -1,0 +1,17 @@
+.imagecontainer {
+    width: 100px;
+    margin: auto;
+    display: block;
+    justify-items: center;
+    
+    
+}
+
+.image {
+    margin: auto;
+    display: block;
+    justify-items: center;
+    width: 50%;
+    
+    
+}
